@@ -62,6 +62,10 @@ int is_valid(Node* n)
       {
         return 0;
       }
+
+      fila_check[fila][num] = 1;
+      col_check[col][num] = 1;
+      submatrices_check[fila / 3 * 3 + col / 3][num] = 1;
     }
 
     return 1;

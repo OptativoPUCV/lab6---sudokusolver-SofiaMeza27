@@ -64,3 +64,17 @@ sudoku.c:67:5: note: ...this statement, but the latter is misleadingly indented 
 cc1.exe: all warnings being treated as errors
 Compilation failed
 9f16a30
+vi.,  6 de oct. de 2023 19:51:36: 
+ sudoku.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+In file included from test.c:5:0:
+sudoku.c: In function 'is_valid':
+sudoku.c:52:3: error: this 'for' clause does not guard... [-Werror=misleading-indentation]
+   for(int fila = 0 ; fila < 9 ; fila++)
+   ^~~
+sudoku.c:71:5: note: ...this statement, but the latter is misleadingly indented as if it is guarded by the 'for'
+     return 1;
+     ^~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+5612466
