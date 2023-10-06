@@ -47,7 +47,7 @@ int is_valid(Node* n)
 {
   int fila_check[9][10] = {0};
   int col_check[9][10] = {0};
-  int submatrices[9][10] = {0};
+  int submatrices_check[9][10] = {0};
 
   for(int fila = 0 ; fila < 9 ; fila++)
     for(int col = 0 ; col < 9 ; col++)
@@ -56,6 +56,11 @@ int is_valid(Node* n)
       if(num == 0)
       {
         continue;
+      }
+
+      if(fila_check[fila][num] || col_check[col][num] || submatrices_check[fila / 3 * 3 + col / 3][num])
+      {
+        return 0;
       }
     }
 
