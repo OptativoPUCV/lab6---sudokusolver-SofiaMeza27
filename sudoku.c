@@ -43,13 +43,18 @@ void print_node(Node* n){
     printf("\n");
 }
 
-int is_valid(Node* n){
+int is_valid(Node* n)
+{
+  int fila_check[9][10] = {0};
+  int col_check[9][10] = {0};
+  int submatrices[9][10] = {0};
 
     return 1;
 }
 
 
-List* get_adj_nodes(Node* n){
+List* get_adj_nodes(Node* n)
+{
     List* list=createList();
 
     for(int fila = 0 ; fila < 9 ; fila++)

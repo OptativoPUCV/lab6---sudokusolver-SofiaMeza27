@@ -10,3 +10,20 @@ vi.,  6 de oct. de 2023 19:40:14:
  tests:  2|4
 total_score: 15/70
 c681ca5
+vi.,  6 de oct. de 2023 19:44:21: 
+ sudoku.c | 9 +++++++--
+ 1 file changed, 7 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+sudoku.c: In function 'is_valid':
+sudoku.c:50:7: error: unused variable 'submatrices' [-Werror=unused-variable]
+   int submatrices[9][10] = {0};
+       ^~~~~~~~~~~
+sudoku.c:49:7: error: unused variable 'col_check' [-Werror=unused-variable]
+   int col_check[9][10] = {0};
+       ^~~~~~~~~
+sudoku.c:48:7: error: unused variable 'fila_check' [-Werror=unused-variable]
+   int fila_check[9][10] = {0};
+       ^~~~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+70e04a9
