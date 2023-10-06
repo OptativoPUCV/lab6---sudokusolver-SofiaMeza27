@@ -49,6 +49,16 @@ int is_valid(Node* n)
   int col_check[9][10] = {0};
   int submatrices[9][10] = {0};
 
+  for(int fila = 0 ; fila < 9 ; fila++)
+    for(int col = 0 ; col < 9 ; col++)
+    {
+      int num = n -> sudo[fila][col];
+      if(num == 0)
+      {
+        continue;
+      }
+    }
+
     return 1;
 }
 
